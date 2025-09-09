@@ -3,7 +3,6 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { MenuIcon } from "lucide-react"
@@ -18,7 +17,6 @@ const links = [
 ]
 
 export function Header() {
-  const pathname = usePathname()
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">

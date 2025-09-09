@@ -2,8 +2,6 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react"
 import { heroSlides } from "@/components/site/data/hero"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 export function Hero() {
   // Pull the text content from slides
@@ -88,10 +86,7 @@ export function Hero() {
   // When index changes, ensure we start typing from title
   useEffect(() => {
     setPhase("typingTitle")
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index])
-
-  const slide = heroSlides[index]
 
   return (
     <section id="home" className="relative w-full min-h-[60vh] h-[60svh] overflow-clip">

@@ -85,7 +85,7 @@ export function Partners() {
           Partnering with the Best
         </h2>
         <p className="text-muted-foreground mt-1">
-          We are partners with the world's leading PLM innovators, engineering solution experts, and strategic consulting authorities.
+          We are partners with the world&apos;s leading PLM innovators, engineering solution experts, and strategic consulting authorities.
         </p>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {partners.map((p) => (
